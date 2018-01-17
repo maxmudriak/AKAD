@@ -1,0 +1,94 @@
+@import "bootstrap-variables";
+@import "bootstrap-custom";
+
+@import "about.scss";
+@import "contact.scss";
+@import "nav";
+@import "slick.scss";
+//font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800|Montserrat:700');
+
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.ba-intro {
+	background-size: cover;
+}
+.ba-intro__body {
+	padding: 188px 0 165px;
+}
+
+.ba-breadcrumbs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+.ba-breadcrumbs li {
+	display: inline-block;
+	font:700 14px/1 Montserrat, sans-serif;
+}
+.ba-breadcrumbs li:not(:first-child):before {
+	content: "/";
+	margin: 0 4px;
+}
+.ba-breadcrumbs a,
+.ba-breadcrumbs span {
+	color:  #60606e;
+	text-transform: uppercase;
+}
+.ba-breadcrumbs a:hover {
+	text-decoration: underline;
+}
+
+.ba-page-title {
+	text-transform: uppercase;
+	margin: 0 0 13px;
+}
+.ba-title {
+	text-transform: uppercase;
+	margin: 0 0 8px;
+	& span {
+		display: inline-block;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: "";
+			background-color:  #7beec7;
+			width: 68px;
+			height: 21px;
+			z-index: -1;
+			left: 0;
+			bottom: 3px;
+		}
+	}
+}
+.ba-subtitle {
+	text-transform: uppercase;
+	margin: 0 0 16px;
+	font-family: $font-family-base;
+	font-weight: 800;
+}
+p {
+	margin: 0 0 15px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.ba-section {
+	padding-top: 140px;
+	&__head {
+		text-align: center;
+		margin: 0 auto 90px;
+		padding-top: 6px;
+		max-width: 750px;
+	}
+	&__title {
+		margin-bottom: 8px;
+	}
+}
+
