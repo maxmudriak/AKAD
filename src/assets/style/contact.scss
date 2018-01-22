@@ -15,6 +15,7 @@
   &__textarea {
     margin-bottom: 32px;
     resize: none;
+    overflow: hidden;
   }
   &__name {
     width: 47.5%;
@@ -34,19 +35,16 @@
 }
 .ba-contact-info {
   padding-top: 100px;
-  color:  #999999;
   font-size: 14px;
   font-weight: 400;
   &__title {
     font-family: Montserrat;
-    color:  rgba(96, 96, 110, 0.5);
-    font-size: 18px;/* Approximation due to font substitution */
+    color:  rgb(96, 96, 110);
+    font-size: 18px;
     font-weight: 700;
-    line-height: 48px;/* Approximation due to font substitution */
-    text-align: left;
   }
   &__text {
-    
+    color:  #999999;
   }
   &__list {
     margin: 0;
@@ -55,5 +53,19 @@
   }
   &__links {
     color:  #999999;
+    &--email {
+      font-weight: 600;
+    }
+  }
+}
+
+// Google maps
+.ba-map {
+  height: 300px;
+  @include breakpoint(sm) {
+    height: 600px;
+  }
+  @include breakpoint(md) {
+    height:900px;
   }
 }

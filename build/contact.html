@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-		<link rel="icon" type="image/png" href="favicon.ico">
+		<link rel="icon" type="image/png" href="favicon.png">
 		<link href="assets/css/app.css" rel="stylesheet">
 		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 		<!--[if lt IE 9]>
@@ -57,19 +57,31 @@
 
 							<li>
 
-								<a href="./index.html">Home</a>
+								<a href="index.html">Home</a>
 
 							</li>
 
 							<li>
 
-								<a href="./about.html">About</a>
+								<a href="about.html">About</a>
 
 							</li>
 
 							<li>
 
-								<a href="./contact.html">Contact us</a>
+								<a href="services.html">Services</a>
+
+							</li>
+
+							<li>
+
+								<a href="blog.html">Blog</a>
+
+							</li>
+
+							<li>
+
+								<a href="contact.html">Contact us</a>
 
 							</li>
 
@@ -120,27 +132,27 @@
 							</h3>
 							<p class="ba-contact-info__text">Lorem ipsum dolor sit amet, conse adipisicing elit. Libero incidunt quod ab mollitia quia dolorum conse.</p>
 							<ul class="ba-contact-info__list">
-								<li>13D, Functional apartment, Unique colony,
+								<li class="ba-contact-info__text">13D, Functional apartment, Unique colony,
 									Agadir 86360
 								</li>
 								<li><a href="tel:+212 124-566-780" class="ba-contact-info__links">+212 124-566-780</a></li>
 								<li><a href="tel:+212 124-566-780" class="ba-contact-info__links">+212 124-566-780</a></li>
-								<li class="ba-contact-info__email"><a href="mailto:email@website.com" class="ba-contact-info__links">email@website.com</a></li>
+								<li class="ba-contact-info__email"><a href="mailto:email@website.com" class="ba-contact-info__links ba-contact-info__links--email ">email@website.com</a></li>
 							</ul>
-							<ul class="ba-contact-social">
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
+							<ul class="ba-social-list">
+							    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+							    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+							    <li><a href="#"><i class="ion-social-youtube"></i></a></li>
+							    <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+							    <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+							    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
 							</ul>
 						</div>
 					</div>
+
 					<!-- /.col-xs-12 col-sm-6 -->
 					<div class="col-xs-12 col-sm-6">
-
-						<div class="ba-map"></div>
+						<div id="ba-map" class="ba-map"></div>
 						<!-- /.ba-map -->
 					</div>
 					<!-- /.col-xs-12 col-sm-6 -->
@@ -151,8 +163,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
-                            <h3 class="ba-contact__title">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h3>
-                            <a href="#" class="btn ba-contact__btn">get in touch</a>
+                            <div class="ba-cal-to-action">
+                                <h3 class="ba-contact__title">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h3>
+                                <a href="#" class="ba-contact__btn">get in touch</a>
+                            </div>
                         </div>
                         <!-- /.col-xs-12 col-md-6 -->
                         <div class="col-xs-12 col-md-6">
@@ -160,7 +174,7 @@
                                 <h4 class="ba-contact-body__title">STAY INFORMED WITH OUR NEWSLETTER</h4>
                                 <p class="ba-contact-body__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <form method="post" action="#" class="ba-contact-body__form">
-                                    <input type="email" name="email">
+                                    <input type="email" name="email" required>
                                     <span class="ba-contact-body__placeholder">Your Email</span>
                                     <a href="#" class="btn btn-primary">send</a>
                                 </form>
@@ -178,13 +192,84 @@
 
 			<div class="container">
 
-		
+				<div class="row ba-footer__container">
+
+					<div class="col-md-7 col-lg-8">
+
+						<nav>
+
+							<ul class="nav navbar-nav ba-footer-menu">
+
+								<li>
+
+									<a href="./index.html">Home</a>
+
+								</li>
+
+								<li>
+
+									<a href="./about.html">About</a>
+
+								</li>
+
+								<li>
+
+									<a href="./services.html">Services</a>
+
+								</li>
+
+								<li>
+
+									<a href="./blog.html">Blog</a>
+
+								</li>
+
+								<li>
+
+									<a href="./contact.html">Contact us</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+					<div class="col-md-5 col-lg-4">
+
+						<p class="ba-footer__text">Created by akhouad 2016. All Rights Reserved</p>
+
+						<ul class="ba-social-list">
+
+						    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+
+						    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+
+						    <li><a href="#"><i class="ion-social-youtube"></i></a></li>
+
+						    <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+
+						    <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+
+						    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+				<!-- /.row -->
 
 			</div>
 
 		</footer>
 
 		
+		<script async defer
+		        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmKUVNN9oaAd609Lv1EhJImsJGffKiYF0">
+		</script>
 		<script src="assets/js/app.js"></script>
 		
 	</body>

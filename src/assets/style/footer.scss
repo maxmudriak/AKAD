@@ -1,0 +1,51 @@
+.ba-footer {
+  text-align: center;
+  color: $gray;
+
+  &__container {
+    padding-top: 50px;
+  }
+  &__text {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  @include breakpoint(md) {
+    text-align: right;
+  }
+}
+.ba-footer-menu {
+  float: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  margin-top: -12px;
+
+  @include breakpoint(sm) {
+    flex-direction: row;
+    justify-content: center;
+  }
+  @include breakpoint(md) {
+    justify-content: flex-start;
+  }
+  li {
+    @include breakpoint(md) {
+      &:not(:first-child):before {
+        content: "-";
+      }
+    }
+    a {
+      color: $gray;
+      display: inline-block;
+      vertical-align: middle;
+      &:hover {
+        background: none;
+        color: $text-color;
+      }
+    }
+  }
+}
+.ba-footer__text ~ .ba-social-list {
+  padding-bottom: 40px;
+  justify-content: flex-end;
+}
