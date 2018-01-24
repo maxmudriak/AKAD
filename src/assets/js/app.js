@@ -2,7 +2,13 @@
 
 // to inlude bootstrap plugins add "=" sign below
 // require javascripts/bootstrap/*.*
-//=require javascripts/bootstrap.min.js
+
+//=require javascripts/tab.js
+//=require javascripts/transition.js
+//=require javascripts/collapse.js
+
+
+// require javascripts/bootstrap.min.js
 
 //=require slick.min.js
 //=require isotope.pkgd.min.js

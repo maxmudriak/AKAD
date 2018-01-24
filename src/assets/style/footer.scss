@@ -3,7 +3,7 @@
   color: $gray;
 
   &__container {
-    padding-top: 50px;
+    padding-top: 44px;
   }
   &__text {
     margin: 0;
@@ -48,4 +48,11 @@
 .ba-footer__text ~ .ba-social-list {
   padding-bottom: 40px;
   justify-content: flex-end;
+}
+.nav {
+  li:first-child {
+    a {
+      padding-left: 0;
+    }
+  }
 }

@@ -13,21 +13,28 @@
       width: 100%;
     }
   }
+  &__mt {
+    margin-top: 24px;
+  }
   &__title {
-    
+    text-transform: uppercase;
+    margin-top: 0;
   }
   &__filter {
     margin: 0 0 $grid-gutter-width;
-    padding: 0;
+    padding: 9px 0 0;
     list-style: none;
-    @media (min-width: $screen-sm) and (max-width: $screen-md) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    button {
-      white-space: nowrap;
+    li {
+      padding-top: 17px;
     }
-    }
+      @media (min-width: $screen-sm) and (max-width: $screen-md) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+           button {
+            white-space: nowrap;
+            }
+       }
     button {
       font: 700 14px/1 $headings-font-family;
       text-transform: uppercase;
